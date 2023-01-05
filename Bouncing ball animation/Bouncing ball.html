@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Bouncing ball</title>
+
+    <style>
+        a{
+            animation: bouncing 0.55s ease 0s infinite alternate both;
+
+            width:80px;
+            height:80px;
+            background-color: blue;
+            padding:50px;
+            text-align: center;
+            border-radius: 90%;
+            position:relative;
+            display: inline-block;
+            margin-top:250px;
+            margin-left:650px;
+        }
+
+        @keyframes bouncing {
+            0%{
+                bottom: 0;
+                box-shadow: 0 0 5px rgb(0, 0, 0);
+                
+            }
+            100%{
+                bottom:250px;
+                box-shadow: 0 50px 50px rgba(0, 0, 0, 0.249);
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <a href="">Ball </a>
+</body>
+</html>
